@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      }
+      a {
+        text-decoration: none;
+        color: white;
+      }
+      .nav {
+        align-items: center;
+        display: flex;
+        justify-content: space-evenly;
+        background-color: black;
+        padding: 0 10px;
+        height: 42px;
+      }
+      #root {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-items: center;
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      }
+      #container {
+        box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+        text-align: center;
+        border-radius: 8px;
+        width: 240px;
+        height: 390px;
+        margin: 30px;
+        padding: 20px;
+        background-color: antiquewhite;
+      }
+      .image {
+        overflow: hidden;
+      }
+      img {
+        width: 200px;
+        height: 200px;
+        box-shadow: rgb(204, 219, 232) 3px 3px 6px 0px inset,
+          rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset;
+      }
+      img:hover {
+        overflow: hidden;
+        transition: 1s;
+        width: 210px;
+        height: 210px;
+      }
+      .rate {
+        margin-top: 30px;
+        color: gold;
+      }
+      .priceconatin {
+        display: flex;
+        margin-top: 30px;
+        justify-content: space-evenly;
+      }
+      #containerbox {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+      }
+      button {
+        background-color: #ff4c4c;
+        color: #fff;
+        border: none;
+        padding: 0.5rem 1rem;
+        cursor: pointer;
+        border-radius: 4px;
+      }
+
+      button:hover {
+        background-color: #ff1a1a;
+      }
+      .logo{
+        font-size: 27px;
+      }
+      #searchproduct{
+        border-radius: 10px;
+        margin-left: 10px;
+        padding: 3px 5px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="nav">
+      <div ><a href="" class="logo">🛍️</a></div>
+      <div><a href="">Home</a></div>
+      <div>
+        🔍<input
+          type="text"
+          name=""
+          id="searchproduct"
+          placeholder="start shopping now.."
+        />
+      </div>
+      <div><a href="./Cart.html">Cart</a></div>
+    </div>
+    <div id="containerbox"></div>
+    <script src="./Home.js"></script>
+  </body>
+</html>

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        display: flex;
+        justify-content: center;
+      }
+      .container {
+        text-align: center;
+        border-radius: 8px;
+        width: 600px;
+        align-items: center;
+        padding: 20px;
+        justify-content: center;
+        padding: 50px;
+      }
+      .cart-container {
+        display: flex;
+        justify-content: space-between;
+      }
+      .cartimg {
+        height: 200px;
+        width: 200px;
+      }
+      .details {
+        text-align: left;
+        margin-left: 50px;
+      }
+      button {
+        background-color: #ff4c4c;
+        color: #fff;
+        border: none;
+        padding: 0.5rem 1rem;
+        cursor: pointer;
+        border-radius: 4px;
+      }
+
+      button:hover {
+        background-color: #ff1a1a;
+      }
+      .product-info {
+        box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+        background-color: white;
+        margin-top: 30px;
+        padding: 28px;
+        width: 600px;
+      }
+      .BuyNow {
+        background-color: orange;
+      }
+      .cart-price {
+        color: rgb(105, 100, 33);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div id="cartContent" class="cart-content"></div>
+      <div id="totalPrice" class="total-price"></div>
+    </div>
+    <script src="./cart.js"></script>
+  </body>
+</html>
